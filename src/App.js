@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './Components/Home/index';
+import Committee from './Components/Committee/index';
+import ContactUs from './Components/ContactUs/index';
+import KeyDates from './Components/Keydates/index';
+import KeyNote from './Components/Keynote/index';
+import Authors from './Components/Authors/index';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/authors">
+            <Authors />
+          </Route>
+          <Route exact path="/committee">
+            <Committee />
+          </Route>
+          <Route exact path="/keynote">
+            <KeyNote />
+          </Route>
+          <Route exact path="/dates">
+            <KeyDates />
+          </Route>
+          <Route exact path="/contactus">
+            <ContactUs />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
