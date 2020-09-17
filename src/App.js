@@ -14,7 +14,7 @@ import Authors from './Components/Authors/index';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-screen h-screen">
       <Router>
         <Switch>
           <Route exact path="/">
