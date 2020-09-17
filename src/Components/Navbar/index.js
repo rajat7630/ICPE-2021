@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
-
-
+import 'materialize-css';
+import { Navbar as Navigation, NavItem, Icon } from "react-materialize";
+import MenuIcon from '@material-ui/icons/Menu';
 class Navbar extends Component {
     render() {
         return (
-            <div>
-                <nav>
-                    <div class="nav-wrapper">
-                        <a href="/" class="brand-logo">Logo</a>
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="/">HOME</a></li>
-                            <li><a href="/committee">COMMITTEE</a></li>
-                            <li><a href="/keynote">KEYNOTE</a></li>
-                            <li><a href="/authors">FOR AUTHORS</a></li>
-                            <li><a href="/dates">KEY DATES</a></li>
-                            <li><a href="/contactus">CONTACT US</a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <ul class="sidenav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
-                </ul>
-            </div>
+            <Navigation className="transparent"
+                alignLinks="right"
+                brand={<a className="brand-logo" href="#">Logo</a>}
+                id="mobile-nav"
+                
+                menuIcon={<MenuIcon color="secondary"/>}
+                options={{
+                    draggable: true,
+                    edge: 'left',
+                    inDuration: 250,
+                    onCloseEnd: null,
+                    onCloseStart: null,
+                    onOpenEnd: null,
+                    onOpenStart: null,
+                    outDuration: 200,
+                    preventScrolling: true
+                }}>
+                <NavItem className="black-text" href="/">HOME</NavItem>
+                <NavItem className="black-text" href="/committee">COMMITTEE</NavItem>
+                <NavItem className="black-text" href="/keynote">KEYNOTE</NavItem>
+                <NavItem className="black-text" href="/authors">FOR AUTHORS</NavItem>
+                <NavItem className="black-text" href="/dates">KEY DATES</NavItem>
+                <NavItem className="black-text" href="/contactus">CONTACT US</NavItem>
+            </Navigation>
         );
     }
 }
