@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 class Navbar extends Component {
     render() {
         return (
-            <Navigation className="transparent"
+            <Navigation className="transparent sticky"
                 alignLinks="right"
                 brand={<a className="brand-logo" href="#">Logo</a>}
                 id="mobile-nav"
@@ -22,12 +22,12 @@ class Navbar extends Component {
                     outDuration: 200,
                     preventScrolling: true
                 }}>
-                <NavItem className="black-text" href="/">HOME</NavItem>
-                <NavItem className="black-text" href="/committee">COMMITTEE</NavItem>
-                <NavItem className="black-text" href="/keynote">KEYNOTE</NavItem>
-                <NavItem className="black-text" href="/authors">FOR AUTHORS</NavItem>
-                <NavItem className="black-text" href="/dates">KEY DATES</NavItem>
-                <NavItem className="black-text" href="/contactus">CONTACT US</NavItem>
+                <NavItem className="white-text" href="/">HOME</NavItem>
+                <NavItem className="white-text" href="/committee">COMMITTEE</NavItem>
+                <NavItem className="white-text" href="/keynote">KEYNOTE</NavItem>
+                <NavItem className="white-text" href="/authors">FOR AUTHORS</NavItem>
+                <NavItem className="white-text" href="/dates">KEY DATES</NavItem>
+                <NavItem className="white-text" href="/contactus">CONTACT US</NavItem>
             </Navigation>
         );
     }

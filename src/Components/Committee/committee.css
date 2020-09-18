@@ -1,10 +1,15 @@
-.addfilter{
-   background-image: linear-gradient(to bottom, rgba(2,0,36,0.85) 5%, rgba(4,9,10,0.85) 28%, rgba(5,19,46,0.85) 44%, rgba(10,45,63,0.85) 69%, rgba(0,212,255,0.85) 100%),
-   url('images/building2.jpg');
+.committeeaddfilter{
+   background-image:linear-gradient(to bottom, rgba(108,57,15,0.75) 3%, rgba(148,88,24,0.75) 28%, rgba(120,70,9,0.75) 46%, rgba(224,182,25,0.75) 79%, rgba(190,181,4,0.75) 100%),
+   url('images/image.jpg');
+   /* background-color: black; */
+}
+
+.navbar{
+    background-color: rgba(2,0,36,0.3) ;
 }
 
 .homeBlock{
-    margin-top: 16vh;
+    margin-top: 40vh;
     padding-left: 10vw;
     padding-right: 10vw;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../Navbar/index';
 import InfoCarousel from "./InfoCarousel/index";
-import "./index.css";
+import "./home.css";
 class Home extends Component {
     render() {
         return (
@@ -11,7 +11,9 @@ class Home extends Component {
                         <div className="w-screen h-screen bg-cover absolute addfilter"></div>
                     </div>
                     <div className="w-screen h-screen absolute">
-                        <Navbar />
+                        <div className="fixed w-screen navbar">
+                            <Navbar />
+                        </div>
                         <div className="homeBlock mx-auto text-center text-white">
                             <h1 className="mx-auto eventHeading font-bold">
                                 IC4E-2021
