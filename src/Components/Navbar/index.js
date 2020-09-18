@@ -9,7 +9,6 @@ class Navbar extends Component {
                 alignLinks="right"
                 brand={<a className="brand-logo" href="#">Logo</a>}
                 id="mobile-nav"
-                
                 menuIcon={<MenuIcon color="secondary"/>}
                 options={{
                     draggable: true,
