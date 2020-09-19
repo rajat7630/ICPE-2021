@@ -5,9 +5,84 @@
     opacity: 0.95;
  }
  
+ .expandButton:hover{
+   background-color: grey;
+ }
+ .expandButton{
+   height: 40px;
+   width: 40px;
+   border-radius: 20px;
+ }
+ .keynoteeventHeading{
+   margin-top: 30vh;
+ }
+ .keynoteCardImage{
+   width: 100%;
+   height: calc(100% - 180px);
+
+ }
+
+ .activator{
+   height: 100%;
+   width: 100%;
+ }
+
+ .card-title{
+   font-weight: bold;
+ }
+
+ .cardDesign{
+   height: 100%;
+   width: 100%;
+ }
+
+ .keynoteRow{
+   margin-top: 10vh; 
+   display: flex;
+ }
+
+ .keynoteCard{
+   width: 30vw;
+   margin-left: 13vw;
+   height: 70vh;
+ }
+
+ .KeynoteHeading{
+   height:100vh;
+ }
+ .closeButton:hover{
+  background-color: red;
+}
+.closeButton{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
  
-   
+
+@media only screen and (max-width: 950px) {
+  .keynoteCard{
+    margin-left: 10vw;
+    width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .keynoteRow{
+    display: block;
+  }
+  .keynoteCard{
+    margin-left: 15vw;
+    margin-bottom: 7vh;
+    width: 70vw;
+  }
+}
    body::-webkit-scrollbar {
      display: none;
      width: 0;
    }
+
+   .card-reveal::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
