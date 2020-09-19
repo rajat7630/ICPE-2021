@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../Navbar/index';
+import 'materialize-css';
+import { Carousel,Row,Card,Col,Icon,CardTitle } from "react-materialize";
 import "./keynote.css";
 import CardKeynote from "./cards.js"
 
@@ -7,14 +9,12 @@ class KeyNote extends Component {
     render() {
         return (
             <>
+                <Navbar />
                 <div className="w-screen KeynoteHeading">
                     <div className="w-screen KeynoteHeading absolute">
                         <div className="w-screen KeynoteHeading bg-cover absolute keynoteaddfilter"></div>
                     </div>
                     <div className="w-screen KeynoteHeading absolute">
-                        <div className="fixed w-screen navbar">
-                            <Navbar />
-                        </div>
                         <div className="homeBlock mx-auto text-center text-white">
                             <h1 className="mx-auto keynoteeventHeading font-bold">
                                 KEYNOTE

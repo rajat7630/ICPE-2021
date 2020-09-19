@@ -15,9 +15,6 @@ import Navbar from "./Components/Navbar/index";
 function App() {
   return (
     <div className="App w-screen h-screen ">
-      <div className="w-screen absolute">
-        <Navbar />
-      </div>
       <div>
         <Router>
           <Switch>

@@ -6,6 +6,7 @@ class Committee extends Component {
     render() {
         return (
             <>
+                <Navbar/>
                 <div className="w-screen organizingHome">
                     <div className="w-screen absolute organizingHome">
                         <div className="w-screen organizingHome bg-cover absolute committeeaddfilter"></div>
