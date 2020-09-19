@@ -4,128 +4,95 @@
    /* background-color: black; */
 }
 
-.navbar{
-    background-color: rgba(2,0,36,0.3) ;
+.cardimage{
+    background-size: 100% 100%;
 }
 
-.homeBlock{
-    margin-top: 40vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+.cardInner{
+    max-width: 100vw !important;
+
 }
-.eventName{
-    font-size: 40px;
+
+.ChiefPatron{
+    align-items: center;
+    width: 100vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
 }
-.eventHeading{
+
+.cardOuter{
+    width: 40vw;
+}
+.committeeHeading{
+    font-size: 50px;
+}
+
+.avatarImage{
+    height: 40px;
+    width: 40px;
+}
+ 
+.commeventHeading{
     font-size: 70px;
+    margin-top: 40vh;
 }
 
-.homelocation{
-    font-size: 20px;
-    margin-top: 10vh;
+.organizingCommittee{
+    width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
-.aboutData{
-    margin-left: 10vw;
-    margin-right: 10vw;
-    font-size: 25px;
-}
-
-.aboutHeading{
-    margin-left: 10vw;
-}
-.infoHeading{
-    font-size: 40px;
-    align-content: center;
-    color: rgba(2,0,36,1);
-}
-
-.infoData{
-    font-size: 20px;
-    color: rgba(2,0,36,1);
-}
-.infoouter{
-    margin-top: 10vh;
-    margin-left: 8vw;
-    margin-right: 8vw;
+.chairPerson{
     display: flex;
 }
-
-.partnerHeading{
-    margin-top: 0;
-    padding-top: 5px;
-    text-align: center;
+.cardChair{
+    width: 29vw;
+    margin-right: 1vw;
 }
-.infobox{
-    border: 1px solid rgba(2,0,36);
-    border-radius: 5px;
-    margin-left: 5px;
-    width: 30vw;
-    padding: 20px;
-    background-color: rgba(0,212,255);
-}
-
-.map{
-    margin-top: 10vh;
-}
-
-.partners{
-    background-color: #097986;
-    height: 40vh;
-}
-.mapframe{
-    width: 100%;
-    height: 500px;
-}
-@media only screen and (max-width: 960px) {
-    .infobox{
-        width: 80vw;
-        margin-bottom: 10px;
+@media only screen and (max-width: 900px) {
+    .commeventHeading{
+        font-size: 30px;
     }
-    .infoData{
-        font-size: 25px;
+    .cardOuter{
+        width: 60vw;
     }
-    .infoHeading{
+    .committeeHeading{
         font-size: 40px;
     }
-    .infoouter{
+    .ChiefPatron{
+        width: 100vw;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .commeventHeading{
+        font-size: 30px;
+    }
+
+    .chairPerson{
         display: block;
     }
-}
-
-@media only screen and (max-width: 650px) {
-    .eventHeading{
-        font-size: 40px;
+    .organizingCommittee{
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
-    .mapframe{
-        height: 350px;
+    .cardChair{
+        width: 80vw;
+        margin-bottom: 5vh;
     }
-    .eventName{
+    .committeeHeading{
         font-size: 25px;
     }
-    .infoData{
-        font-size: 15px;
+    .cardOuter{
+        width: 80vw; 
     }
-    .infoHeading{
-        font-size: 30px;
+    .ChiefPatron{
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
-    .homeBlock{
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .homelocation{
-        font-size: 16px;
-    }
-    .aboutHeading{
-        font-size: 30px;
-    }
-    .aboutData{
-        font-size: 15px;
-    }
-  }
-  
-  
-  
-  body::-webkit-scrollbar {
+}
+body::-webkit-scrollbar {
     display: none;
     width: 0;
   }

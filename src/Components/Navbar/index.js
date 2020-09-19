@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 class Navbar extends Component {
     render() {
         return (
-            <Navigation className="transparent sticky"
+            <Navigation className="transparent"
                 alignLinks="right"
                 brand={<a className="brand-logo" href="#">Logo</a>}
                 id="mobile-nav"

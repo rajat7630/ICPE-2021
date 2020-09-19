@@ -5,7 +5,6 @@ class KeyDates extends Component {
     render() {
         return (
             <>
-                <Navbar />
                 <h1>
                     Key Dates
                 </h1>

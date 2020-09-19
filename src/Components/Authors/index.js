@@ -5,7 +5,6 @@ class Authors extends Component {
     render() {
         return (
             <>
-                <Navbar />
                 <h1>
                     Authors
                 </h1>

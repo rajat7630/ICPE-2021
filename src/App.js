@@ -11,10 +11,13 @@ import ContactUs from './Components/ContactUs/index';
 import KeyDates from './Components/Keydates/index';
 import KeyNote from './Components/Keynote/index';
 import Authors from './Components/Authors/index';
-
+import Navbar from "./Components/Navbar/index";
 function App() {
   return (
-    <div className="App w-screen h-screen">
+    <div className="App w-screen h-screen ">
+      <div className="fixed w-screen z-10">
+        <Navbar />
+      </div>
       <Router>
         <Switch>
           <Route exact path="/">

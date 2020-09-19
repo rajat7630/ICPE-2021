@@ -5,7 +5,6 @@ class ContactUs extends Component {
     render() {
         return (
             <>
-                <Navbar />
                 <h1>
                     Contact Us
                 </h1>

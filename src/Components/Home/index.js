@@ -11,9 +11,6 @@ class Home extends Component {
                         <div className="w-screen h-screen bg-cover absolute addfilter"></div>
                     </div>
                     <div className="w-screen h-screen absolute">
-                        <div className="fixed w-screen navbar">
-                            <Navbar />
-                        </div>
                         <div className="homeBlock mx-auto text-center text-white">
                             <h1 className="mx-auto eventHeading font-bold">
                                 IC4E-2021
