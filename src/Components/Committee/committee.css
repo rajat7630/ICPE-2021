@@ -4,6 +4,9 @@
    /* background-color: black; */
 }
 
+.organizingHome{
+    height: 60vh;
+}
 .cardimage{
     background-size: 100% 100%;
 }
@@ -34,13 +37,19 @@
  
 .commeventHeading{
     font-size: 70px;
-    margin-top: 40vh;
+    margin-top: 30vh;
 }
 
 .organizingCommittee{
     width: 100vw;
     padding-left: 5vw;
     padding-right: 5vw;
+}
+
+.organizingSecretary{
+    width: 100vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 .chairPerson{
     display: flex;
@@ -68,6 +77,10 @@
 @media only screen and (max-width: 650px) {
     .commeventHeading{
         font-size: 30px;
+    }
+
+    .organizingSecretary{
+        padding-left: 10vw;
     }
 
     .chairPerson{

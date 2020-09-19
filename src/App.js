@@ -15,31 +15,33 @@ import Navbar from "./Components/Navbar/index";
 function App() {
   return (
     <div className="App w-screen h-screen ">
-      <div className="fixed w-screen z-10">
+      <div className="w-screen absolute">
         <Navbar />
       </div>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/authors">
-            <Authors />
-          </Route>
-          <Route exact path="/committee">
-            <Committee />
-          </Route>
-          <Route exact path="/keynote">
-            <KeyNote />
-          </Route>
-          <Route exact path="/dates">
-            <KeyDates />
-          </Route>
-          <Route exact path="/contactus">
-            <ContactUs />
-          </Route>
-        </Switch>
-      </Router>
+      <div>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/authors">
+              <Authors />
+            </Route>
+            <Route exact path="/committee">
+              <Committee />
+            </Route>
+            <Route exact path="/keynote">
+              <KeyNote />
+            </Route>
+            <Route exact path="/dates">
+              <KeyDates />
+            </Route>
+            <Route exact path="/contactus">
+              <ContactUs />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }
