@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import Navbar from '../Navbar/index';
+import 'materialize-css';
+import { Carousel,Row,Card,Col,Icon,CardTitle } from "react-materialize";
 import "./keynote.css";
 class KeyNote extends Component {
     render() {
         return (
-            <>
-                <div className="w-screen h-screen">
-                    <div className="w-screen h-screen absolute">
-                        <div className="w-screen h-screen bg-cover absolute keynoteaddfilter"></div>
+            <div>
+                <Navbar/>
+                <Carousel
+                    carouselId="Carousel-2"
+                    className="white-text center"
+                    options={{
+                        fullWidth: true,
+                        indicators: true
+                    }}
+                >
+                    <div className="addfilter">
+                        <h1 className="font-bold font-setting">KEYNOTE</h1>
                     </div>
-                    <div className="w-screen h-screen absolute">
-                        <div className="fixed w-screen navbar">
-                            <Navbar />
-                        </div>
-                        <div className="homeBlock mx-auto text-center text-white">
-                            <h1 className="mx-auto eventHeading font-bold">
-                                KEYNOTE
-                        </h1>
-                        </div>
-                    </div>
-                </div>
-            </>
+                </Carousel>
+            </div>
         );
     }
 }

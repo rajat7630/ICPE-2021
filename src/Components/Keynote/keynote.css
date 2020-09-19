@@ -1,13 +1,18 @@
-.keynoteaddfilter{
-    background-image:
-    url('images/image.jpg');
-    /* background-color: black; */
-    opacity: 0.95;
- }
- 
- 
-   
-   body::-webkit-scrollbar {
-     display: none;
-     width: 0;
-   }
+.addfilter{
+  background-image: linear-gradient(160deg,  rgba(108,57,15,0.75) 3%, rgba(148,88,24,0.75) 28%, rgba(120,70,9,0.75) 46%, rgba(224,182,25,0.75) 79%, rgba(190,181,4,0.75) 100%),url('images/image.jpg');
+  background-size: cover;
+
+
+}
+
+.font-setting{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 8vh;
+}
+.card-alignment{
+  width: 100%;
+  align-content: center;
+}

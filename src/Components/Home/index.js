@@ -5,15 +5,16 @@ import "./home.css";
 class Home extends Component {
     render() {
         return (
-            <>
+            <div>
+                <Navbar/>
                 <div className="w-screen h-screen">
                     <div className="w-screen h-screen absolute">
-                        <div className="w-screen h-screen bg-cover absolute addfilter"></div>
+                        <div className="w-screen h-screen bg-cover absolute addhome"></div>
                     </div>
                     <div className="w-screen h-screen absolute">
                         <div className="homeBlock mx-auto text-center text-white">
                             <h1 className="mx-auto eventHeading font-bold">
-                                IC4E-2021
+                                ICPE-2021
                             </h1>
                             <br />
                             <span className="eventName">
@@ -21,7 +22,7 @@ class Home extends Component {
                             </span>
                             <br />
                             <div className="homelocation">
-                                06th - 07th November, 2020<br />
+                                JUNE, 2021<br />
                                 National Institute of Technology,Kurukshetra
                             </div>
                         </div>
@@ -29,7 +30,7 @@ class Home extends Component {
                 </div>
                 <div>
                     <h1 className="aboutHeading">
-                        About IC4E-2021
+                        About ICPE-2021
                     </h1>
                     <p className="aboutData text-justify">
                         The theme of the conference is “Intelligent and Green technologies for Next Generation Electronics and Communication Systems”. The dependence of human life on the semiconductors and communications in the modern life has become ubiquitous. To achieve this goal, scientific and engineering researches are going on in the areas of communication, semiconductors and computing everywhere. The aim of this conference on Cutting-edge Technologies in Computing and Communication Engineering (IC4E-2020) is to bring leading academicians, industrialists, government standard organizations, scientists, research scholars, UG/PG students on the same platform to present their work and discuss the various prospective for the implementation of next generation electronic systems keeping in view that the technologies are environment friendly.
@@ -50,7 +51,7 @@ class Home extends Component {
                         Partners
                         </h1>
                 </div>
-            </>
+            </div>
         );
     }
 }
